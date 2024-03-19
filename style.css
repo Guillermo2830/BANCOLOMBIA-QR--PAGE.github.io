@@ -1,0 +1,222 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+
+:root {
+    --color-hedaer: black;
+    --color-main: #FCF100;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    background-color: black ;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.header-left img {
+    width: 800px;
+    height: 100px;
+    object-fit: cover;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--color-main);
+}
+
+.qr-logo {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr-logo img {
+
+    width: 500px;
+    height: auto;
+}
+
+.tittle{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.tittle h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tittle h1 .bold {
+    font-size: 70px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.tittle p {
+    font-size: 25px;
+}
+
+.list {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list ol {
+    
+    font-size: 20px;
+    text-align: start;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+
+}
+
+.box p {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.boxes-container {
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+.boxes {
+    width: 80px;
+    height: 90px;
+    background: white;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px ;
+    border: none;
+    
+}
+
+.boxes img {
+
+    object-fit: cover;
+    width: 60px;
+}
+
+.boxes:hover {
+    box-shadow: 0 1px 6px 0 black;
+}
+
+.firma-container {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.firma-form{
+    width: 66%;
+    height: 100px;
+    background: white;
+    border-radius: 25px;
+}
+
+.firma-form p {
+    display: flex;
+    justify-content: end;
+    margin-top: 80px;
+    margin-right: 15px;
+    color: #CBCBCA;
+    font-size: 20px;
+}
+
+.firma-form:hover {
+    box-shadow: 0 1px 6px 0 black;
+}
+
+.box .p-sub {
+    display: flex;
+    justify-content: center;
+}
+
+.information {
+    display: flex;
+    justify-content: end;
+    margin-top: -50px;
+    height: 50px;
+    
+    
+}
+
+.information p {
+    margin-top: 0;
+    margin-bottom: 50px;
+    margin-right: 320px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+@media (min-width: 500px) {
+    .header-left img {
+        width: 550px;
+        height: 100px;
+       
+    }
+
+    
+
+}
+
+@media (max-width: 800px) {
+    .boxes-container {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 11px;
+        
+    }
+
+    .information p {
+        margin-top: 0;
+        margin-bottom: 50px;
+        margin-right: 60px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .firma-form{
+        width: 95%;
+        height: 100px;
+        background: white;
+        border-radius: 25px;
+    }
+
+    .information p {
+      
+       font-size: 18px;
+       margin-right: 50px;
+       
+    }
+    
+}
